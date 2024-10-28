@@ -15,6 +15,11 @@
 
   <img width="333" alt="Screenshot 2024-10-23 at 11 35 54 PM" src="https://github.com/user-attachments/assets/30393474-3dac-4bd2-a6ef-88fbf08f9fdb">
 
+ # More insight into the features
+This site shows more about the features of the BDOS ENTRY feastures and what they do https://www.seasip.info/Cpm/bdos.html 
+
+It also shows more about the BIOS ( Basic Input / Output System) functions  for operation and what they do https://www.seasip.info/Cpm/bios.html 
+
 # Vocabulary 
 
 1. Vectors: A vector is a statement inside of a computer that tells a program where to go specifically in memory and its unconditional specific action
