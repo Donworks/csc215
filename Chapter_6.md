@@ -59,3 +59,5 @@ Vocab
 5. Prom: Programable Read Only Memory (The main thing that the functions inside Prom do is to connect the software to the hardware physically.
 
 6. CBIOS Customized Basic Input and Output System
+
+continuation of the chapter https://github.com/johan-franco/csc215/blob/main/Notes/Chap6.md
