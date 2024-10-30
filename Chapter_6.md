@@ -18,7 +18,33 @@
  # More insight into the features
 This site shows more about the features of the BDOS ENTRY feastures and what they do https://www.seasip.info/Cpm/bdos.html 
 
-It also shows more about the BIOS ( Basic Input / Output System) functions  for operation and what they do https://www.seasip.info/Cpm/bios.html 
+It also shows more about the BIOS ( Basic Input / Output System) functions  for operation and what they do https://www.seasip.info/Cpm/bios.html
+
+# What Devices are needed for us to communicate with the computer
+
+- There are two main devices we use to communicate with the computer for visual age and to help comunicate with the computer we use a keyboard, cpu and a monitor to help us communicate with the computer.
+
+- So it starts with the key board which have buttons but these buttons have a set of numbers specefied (These are called scan code Numbers) to them But When we press the key it makes a small electric current flow which then flow into a small chip withing the keyboard then it sends a binary number which is connected with that key to the CPU
+  <img width="671" alt="Screenshot 2024-10-29 at 11 25 58 PM" src="https://github.com/user-attachments/assets/4880435f-4542-493d-8cb6-3e1d91266741">
+
+- It then goes to the CPU which then the operating system the checks to see if any keys have been pressed once the OS sees that a key has been pressed it then figures out were the data needs to go it then creates an event which is already placed in the systems hardware which your OS already knows.
+  <img width="1334" alt="Screenshot 2024-10-29 at 11 59 09 PM" src="https://github.com/user-attachments/assets/4503798f-7945-4d50-b281-fa71ce338696">
+
+
+- The OS then takes the scan code from the keyboard and its associated letter that the scan code represents and creats a ubicode out of this data for the text editor to use to make the image which is represented by  <img width="1304" alt="Screenshot 2024-10-29 at 11 54 25 PM" src="https://github.com/user-attachments/assets/8ca27413-69d7-4a02-b33b-af704029fb4d">
+
+- a binary number which the the text editor sends back to the CPU which is then sent the GPU which finds the location of where it should be on the monitor then makes the pixels and sends the image to the monitor
+<img width="1335" alt="Screenshot 2024-10-29 at 11 53 56 PM" src="https://github.com/user-attachments/assets/a36af3e7-e03d-4853-99f5-844cc3cd4458">
+
+
+Vocab
+- GPU: Graphics processing unit
+- CPU: Computer Processing unit 
+- OS: Operating System
+
+  All images provided and information provided were from FutureLearn.com  " what happens inside your Computer when a key is pressed?"
+
+  Site for better Insight: https://www.futurelearn.com/info/courses/computer-systems/0/steps/53503
 
 # Vocabulary 
 
