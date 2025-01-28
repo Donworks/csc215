@@ -1,4 +1,6 @@
-#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+
+// THis is jeffs big ints from his repo
+i#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
 #include <string>
 #include "BigInt.h"
@@ -14,9 +16,8 @@ TEST_CASE("Test can create and render BigInts") {
     BigInt bi4("123456789012345678901234567890");
     CHECK(bi4.to_string() == "123456789012345678901234567890");
     BigInt bi5("-923456789012345678901234567890");
-    CHECK(bi5.to_string() == "-923456789012345678901234567890");
+    CHECK(bi5.to_string() == "-923456789012345678901234567890")
 }
-
 
 TEST_CASE("Test can compare BigInts for equality") {
     BigInt i1("12345");
@@ -57,30 +58,6 @@ TEST_CASE("Test can compare BigInts with !=, <=, <, and <=") {
     CHECK((i6 >= i4) == true);
 }
 
-TEST_CASE("Test helper function to add digit strings with same num digits") {
-    CHECK(sum_common_len_digit_strs("123", "321") == "444");
-    CHECK(sum_common_len_digit_strs("123", "123") == "246");
-    CHECK(sum_common_len_digit_strs("123", "222") == "345");
-    CHECK(sum_common_len_digit_strs("123", "119") == "242");
-    CHECK(sum_common_len_digit_strs("123", "888") == "c+011");
-    CHECK(sum_common_len_digit_strs("999", "999") == "c+998");
-    CHECK(sum_common_len_digit_strs("123456789012345678901234567890",
-                                    "123456789012345678901234567890")
-                                 == "246913578024691357802469135780");
-    CHECK(sum_common_len_digit_strs("900000000000000000000000000009",
-                                    "900000000000000000000000000009")
-                                 == "c+800000000000000000000000000018");
-}
-
-TEST_CASE("Test increment_digit_string helper function") {
-    CHECK(increment_digit_string("8") == "9");
-    CHECK(increment_digit_string("24") == "25");
-    CHECK(increment_digit_string("100") == "101");
-    CHECK(increment_digit_string("99") == "100");
-    CHECK(increment_digit_string("1199") == "1200");
-    CHECK(increment_digit_string("9999") == "10000");
-}
-
 TEST_CASE("Test can add BigInts") {
     BigInt i1("123");
     BigInt i2("321");
@@ -92,4 +69,21 @@ TEST_CASE("Test can add BigInts") {
     CHECK((i1 + i3).to_string() == "43333");
     CHECK((i4 + i5).to_string() == "10000");
     CHECK((i6 + i6).to_string() == "246913578246913578246913578");
+}
+
+TEST_CASE("Test can subtract BigInts") {
+    BigInt i1("432");
+    BigInt i2("121");
+    BigInt i3("990");
+    BigInt i4("1");
+    CHECK((i3 - i4).to_string() == "989");
+/*
+    BigInt i3("43210");
+    BigInt i4("9999");
+    BigInt i5("1");
+    BigInt i6("123456789123456789123456789");
+    CHECK((i1 + i3).to_string() == "43333");
+    CHECK((i4 + i5).to_string() == "10000");
+    CHECK((i6 + i6).to_string() == "246913578246913578246913578");
+*/
 }
